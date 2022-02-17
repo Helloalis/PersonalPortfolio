@@ -73,6 +73,7 @@
 }
 
 
+
 .App-link:link {
     color: #06c4ff;
     background-color: transparent;
@@ -84,12 +85,12 @@
 }
 
 .App-link:hover {
-    color: red;
+    color: yellow;
     background-color: transparent;
 }
 
 .App-link:active {
-    color: yellow;
+    color: red;
     background-color: transparent;
 }
 
