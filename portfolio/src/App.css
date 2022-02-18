@@ -66,12 +66,12 @@
 
 
 .App-link:link {
-    color: #06c4ff;
+    color: #23ddff;
     background-color: transparent;
 }
 
 .App-link:visited {
-    color: #00e080;
+    color: #40ff90;
     background-color: transparent;
 }
 
@@ -85,6 +85,27 @@
     background-color: transparent;
 }
 
+.App-link-nav:link {
+    color: #06c4ff;
+    background-color: transparent;
+}
+
+.App-link-nav:visited {
+    color: #00e080;
+    background-color: transparent;
+}
+
+.App-link-nav:hover {
+    color: yellow;
+    background-color: transparent;
+}
+
+.App-link-nav:active {
+    color: red;
+    background-color: transparent;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -94,3 +115,6 @@
   }
 }
 
+.list-group-item-dark {
+    background-color:gray;
+}
