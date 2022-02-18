@@ -7,7 +7,8 @@ import passCheOu from "./images/passwordCheckerOutput.png";
 import ll from "./images/linkedList.png";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Outlet, Link } from "react-router-dom";
-
+import btprd from "./images/bookTrackerReq.png";
+import dbuml from "./images/DatabaseUML.png";
 
 function Intro(props) {
     return <div><h1>Introduction</h1> <p>Hello! My name is Rohan. I am currently in the Collabera training program to be a Java Developer</p></div>
@@ -47,9 +48,13 @@ function Home() {
     return <h3>Click a link to see one of the projects</h3>
 }
 
-function bookTracker() {
+function BookTracker() {
     return (
-        
+        <div class="row bookTracker">
+            <img src={btprd} class="col-4" alt="the requirement section of the PRD" />
+            <p class="col-4">This was a group project in training. We were asked to create a set of servlets, a database, and everything that goes in between as a maven project. I was on the database team, and created the dataset. Of the 50 books we used as data, 39 were books I've read, and I did quite enjoy working on this.</p>
+            <img src={dbuml} class="col-4" alt="The uml diagram for the database"/>
+        </div>
     )
 }
 
@@ -63,6 +68,7 @@ function Layout(){
                     <li><Link class="App-Link" to="/">Home</Link></li>
                     <li><Link class="App-Link" to="/linkedList">LinkedList</Link></li>
                     <li><Link class="App-Link" to="/passwordChecker">Password Checker</Link></li>
+                    <li><Link class="App-Link" to="/bookTracker">Book Tracker</Link></li>
                 </ul>
             </nav>
             <Outlet />
@@ -109,6 +115,7 @@ return (
                             <Route index element={<Home />} />
                             <Route path="linkedList" element={<LinkedList />} />
                             <Route path="passwordChecker" element={<PasswordChecker />} />
+                            <Route path="bookTracker" element={<BookTracker />} />
                         </Route>
                     </Routes>
                 </BrowserRouter>
