@@ -41,8 +41,6 @@ class Contact extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
 
-
-
         //This templateId is created in EmailJS.com
         const templateId = 'template_37s5ljk';
 

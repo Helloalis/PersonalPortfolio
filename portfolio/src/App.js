@@ -27,6 +27,7 @@ function PasswordChecker() {
                     <li class="list-group-item list-group-item-dark">Has to contain one number</li>
                     <li class="list-group-item list-group-item-dark">Cannot have more than 2 of the same character in a row</li>
                 </ul>
+                <a href="https://github.com/Helloalis/Assignment_1_Repo" class="App-link">Github Link</a>
             </div>
             <img src={passCheOu} class="col-4 rounded float-end" alt="This program evaluates password strengths" />
 		</div>
@@ -37,9 +38,11 @@ function LinkedList() {
     return (
     <div class="row linkedList">
             <img class="col-4" src={ll} alt="The linked list interface" />
-            <div class="col">
+            <div class="col-4">
                 <p> This was an assignment for college. We were asked to write a generic double singly-linked list class with an iterator, and a generic sorted double singly-linked list class with an iterator that inherits from your generic double singly-linked list class.</p>
+                <a href="https://github.com/Helloalis/Assignment3" class="App-link">Github Link</a>
             </div>
+            <div class="col-4"></div>
     </div>
     )
 }
@@ -64,6 +67,7 @@ function BookTracker() {
             <div class="col-4">
                 <p>This was a group project in training. We were asked to create a set of servlets, a database, and everything that goes in between as a maven project. I was on the database team, and created the dataset. Of the 50 books we used as data, 39 were books I've read, and I did quite enjoy working on this.</p>
                 <MembersList />
+                <a href="https://github.com/EricSei/book-tracker" class="App-link">Github Link</a>
             </div>
             <img src={dbuml} class="col-4" alt="The uml diagram for the database"/>
         </div>
@@ -74,7 +78,7 @@ function Layout(){
     return (
         <div class="portfolio">
             <h2>Portfolio</h2>
-            <p>Heres my portfolio</p>
+            <p>Here's my portfolio</p>
             <nav class="row">
                 <div class="col-3"></div>
                 <ul class="list-group col-6">
